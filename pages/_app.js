@@ -1,11 +1,13 @@
 import Header from "../components/Sections/Header";
-import "../styles/globals.css";
+import "../styles/styles.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <Component {...pageProps} />
+      <div className="ed-grid">
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }
